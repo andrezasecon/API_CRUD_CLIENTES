@@ -1,14 +1,12 @@
 package com.andrezasecon.apiclientes.entities;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_client")
+@Table(name = "TB_CLIENT")
 public class Client implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -18,7 +16,7 @@ public class Client implements Serializable {
     private String name;
     private String cpf;
     private Double income;
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant birthDate;
     private Integer children;
 

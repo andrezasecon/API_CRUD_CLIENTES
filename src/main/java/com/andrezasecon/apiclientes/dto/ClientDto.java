@@ -1,7 +1,6 @@
 package com.andrezasecon.apiclientes.dto;
 
 import com.andrezasecon.apiclientes.entities.Client;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.time.Instant;
